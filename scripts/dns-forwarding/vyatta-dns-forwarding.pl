@@ -95,9 +95,6 @@ sub dnsforwarding_get_values {
         $output .= "cache-size=$cache_size\n";
     }
 
-    if (defined $query_all_servers) {
-        $output .= "all-servers\n";
-    }
 
     if (defined $ignore_hosts_file) {
         $output .= "no-hosts\n";
